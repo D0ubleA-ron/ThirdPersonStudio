@@ -74,13 +74,9 @@ private void CheckGrounded()
 
     if (isGrounded)
     {
-        Debug.Log("Player is grounded");
         isGrounded = hit.collider.CompareTag("Ground");
     }
-    else
-    {
-        Debug.Log("Player is not grounded");
-    }
+
 }
 
     private void OnDrawGizmos()
